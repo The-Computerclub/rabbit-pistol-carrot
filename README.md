@@ -1,4 +1,4 @@
-# Rabbit-Pistol-Carrot
+# 🐰 Rabbit - 🔫 Pistol - 🥕 Carrot
 
 A popular game for two players, also known as Rock-Paper-Scissors. Used to demonstrate the beauty of Specification by Example (SbE) in a workshop.
 
