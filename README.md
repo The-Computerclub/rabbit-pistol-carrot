@@ -2,7 +2,7 @@
 
 A popular game for two players, also known as Rock-Paper-Scissors. Used to demonstrate the beauty of Specification by Example (SbE) in a workshop.
 
-[![.github/workflows/test.yaml](https://github.com/The-Computerclub/rabbit-pistol-carrot/actions/workflows/test.yaml/badge.svg)](https://github.com/The-Computerclub/rabbit-pistol-carrot/actions/workflows/test.yaml) [![.github/workflows/static-analysis.yaml](https://github.com/The-Computerclub/rabbit-pistol-carrot/actions/workflows/static-analysis.yaml/badge.svg)](https://github.com/The-Computerclub/rabbit-pistol-carrot/actions/workflows/static-analysis.yaml)
+[![.github/workflows/test.yaml](https://github.com/The-Computerclub/rabbit-pistol-carrot/actions/workflows/test.yaml/badge.svg)](https://github.com/The-Computerclub/rabbit-pistol-carrot/actions/workflows/test.yaml) [![.github/workflows/static-analysis.yaml](https://github.com/The-Computerclub/rabbit-pistol-carrot/actions/workflows/static-analysis.yaml/badge.svg)](https://github.com/The-Computerclub/rabbit-pistol-carrot/actions/workflows/static-analysis.yaml) ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Prerequisites
 
@@ -55,3 +55,7 @@ When using one of these configurations an incremental build is triggered automag
 ## Notes
 
 This project is for educational purpose only. Feel free to contact me if you have any questions or need help.
+
+## License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
