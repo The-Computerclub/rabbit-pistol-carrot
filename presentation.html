@@ -204,12 +204,10 @@
 
     <script>
       document.addEventListener("keypress", (event) => {
-        switch (event.key) {
-          case "f":
-            document.documentElement.requestFullscreen({
-              navigationUI: "hide",
-            });
-            break;
+        if (event.key === "f") {
+          document.documentElement.requestFullscreen({
+            navigationUI: "hide",
+          });
         }
       });
     </script>
