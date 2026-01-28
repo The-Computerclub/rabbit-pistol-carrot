@@ -4,11 +4,11 @@ import * as games from "../../games.js";
 import * as hooks from "../hooks.js";
 
 When(
-  "{word} picks {word}",
-  (playerName: string, playerChoice: games.GameChoice | "nothing") => {
+  "{word} picks {string}",
+  (playerName: string, playerChoice: games.GameChoice | "") => {
     const game = hooks.getGame();
 
-    if (playerChoice === "nothing") {
+    if (playerChoice === "") {
       hooks.setPlayerChoice(playerName, null);
     } else {
       hooks.setPlayerChoice(playerName, playerChoice);

@@ -5,19 +5,19 @@ Feature: Carrot Pistol Rabbit rules with three people.
     Given David, John and Khalil play the game
 
   Scenario Outline: Khalil wins
-    When David picks <David 1>
-    And John picks <John 1>
-    And Khalil picks <Khalil 1>
-    And David picks <David 2>
-    And John picks <John 2>
-    And Khalil picks <Khalil 2>
-    And David picks <David 3>
-    And John picks <John 3>
-    And Khalil picks <Khalil 3>
+    When David picks "<David 1>"
+    And John picks "<John 1>"
+    And Khalil picks "<Khalil 1>"
+    And David picks "<David 2>"
+    And John picks "<John 2>"
+    And Khalil picks "<Khalil 2>"
+    And David picks "<David 3>"
+    And John picks "<John 3>"
+    And Khalil picks "<Khalil 3>"
     Then Khalil should win
     And John should lose
     And David should lose
 
     Examples:
-      | David 1 | John 1 | Khalil 1 | David 2 | John 2 | Khalil 2 | David 3 | John 3  | Khalil 3 |
-      | rabbit  | rabbit | nothing  | nothing | rabbit | pistol   | pistol  | nothing | carrot   |
+      | David 1 | John 1 | Khalil 1 | David 2 | John 2 | Khalil 2 | David 3 | John 3 | Khalil 3 |
+      | rabbit  | rabbit |          |         | rabbit | pistol   | pistol  |        | carrot   |
