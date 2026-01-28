@@ -4,8 +4,8 @@ Feature: Carrot Pistol Rabbit rules with two players
     Given Alice and Bob play the game
 
   Scenario Outline: Alice wins
-    When Alice plays <Alice choice>
-    And Bob plays <Bob choice>
+    When Alice picks <Alice choice>
+    And Bob picks <Bob choice>
     Then Alice should win
     And Bob should lose
 
@@ -16,8 +16,8 @@ Feature: Carrot Pistol Rabbit rules with two players
       | pistol       | rabbit     |
 
   Scenario Outline: Draw
-    When Alice plays <Alice choice>
-    And Bob plays <Bob choice>
+    When Alice picks <Alice choice>
+    And Bob picks <Bob choice>
     Then the game should be a draw
 
     Examples:

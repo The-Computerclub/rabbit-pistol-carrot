@@ -4,10 +4,10 @@ Feature: Carrot Pistol Rabbit rules with two players playing two rounds
     Given George and Harry play the game
 
   Scenario Outline: George wins
-    When George plays <George choice 1>
-    And Harry plays <Harry choice 1>
-    And George plays <George choice 2>
-    And Harry plays <Harry choice 2>
+    When George picks <George choice 1>
+    And Harry picks <Harry choice 1>
+    And George picks <George choice 2>
+    And Harry picks <Harry choice 2>
     Then George should win
     And Harry should lose
 
@@ -18,10 +18,10 @@ Feature: Carrot Pistol Rabbit rules with two players playing two rounds
       | pistol          | rabbit         | carrot          | pistol         |
 
   Scenario Outline: Harry wins
-    When George plays <George choice 1>
-    And Harry plays <Harry choice 1>
-    And George plays <George choice 2>
-    And Harry plays <Harry choice 2>
+    When George picks <George choice 1>
+    And Harry picks <Harry choice 1>
+    And George picks <George choice 2>
+    And Harry picks <Harry choice 2>
     Then George should lose
     And Harry should win
 
@@ -32,10 +32,10 @@ Feature: Carrot Pistol Rabbit rules with two players playing two rounds
       | pistol          | pistol         | carrot          | rabbit         |
 
   Scenario Outline: Draw
-    When George plays <George choice 1>
-    And Harry plays <Harry choice 1>
-    And George plays <George choice 2>
-    And Harry plays <Harry choice 2>
+    When George picks <George choice 1>
+    And Harry picks <Harry choice 1>
+    And George picks <George choice 2>
+    And Harry picks <Harry choice 2>
     Then the game should be a draw
 
     Examples:
