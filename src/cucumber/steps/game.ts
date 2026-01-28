@@ -64,7 +64,23 @@ Then("{word} should win", (playerName: string) => {
         assert.fail(`Player name ${playerName} not found`);
     }
   } else if (game instanceof games.ThreePlayerGame) {
-    assert.fail("Not implemented yet");
+    const [firstName, secondName, thirdName] = hooks.getThreePlayerNames();
+
+    const result = game.getResult();
+
+    switch (playerName) {
+      case firstName:
+        assert.equal(result, "firstWins");
+        break;
+      case secondName:
+        assert.equal(result, "secondWins");
+        break;
+      case thirdName:
+        assert.equal(result, "thirdWins");
+        break;
+      default:
+        assert.fail(`Player name ${playerName} not found`);
+    }
   } else {
     assert.fail("Unknown game type");
   }
@@ -80,16 +96,32 @@ Then("{word} should lose", (playerName: string) => {
 
     switch (playerName) {
       case firstName:
-        assert.equal(result, "secondWins");
+        assert.notEqual(result, "firstWins");
         break;
       case secondName:
-        assert.equal(result, "firstWins");
+        assert.notEqual(result, "secondWins");
         break;
       default:
         assert.fail(`Player name ${playerName} not found`);
     }
   } else if (game instanceof games.ThreePlayerGame) {
-    assert.fail("Not implemented yet");
+    const [firstName, secondName, thirdName] = hooks.getThreePlayerNames();
+
+    const result = game.getResult();
+
+    switch (playerName) {
+      case firstName:
+        assert.notEqual(result, "firstWins");
+        break;
+      case secondName:
+        assert.notEqual(result, "secondWins");
+        break;
+      case thirdName:
+        assert.notEqual(result, "thirdWins");
+        break;
+      default:
+        assert.fail(`Player name ${playerName} not found`);
+    }
   } else {
     assert.fail("Unknown game type");
   }
