@@ -7,6 +7,7 @@ Given(
   (firstName: string, secondName: string) => {
     const game = new games.TwoPlayerGame();
     hooks.setGame(game);
+
     hooks.addPlayer(firstName);
     hooks.addPlayer(secondName);
   },
